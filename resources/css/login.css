@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* desktop medium to large screen */
+@media screen and (min-width: 1600px) and (orientation: landscape) {
+
+    /* form */
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-title {
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 0 0 2vw 0;
+    }
+
+    .input {
+        width: 35vw;
+        height: auto;
+        font-size: 1.25vw;
+        border: none;
+        background-color: none;
+        border-bottom: 0.2vw solid black;
+        margin: 0 0 2vw 0;
+    }
+
+    .error {
+        font-size: 1.25vw;
+        margin: 0 0 1vw 0;
+        color: red;
+    }
+
+    .button {
+        width: 10vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
+        border: none;
+        background-color: black;
+        color: white;
+        transition: all ease-in-out 0.25s;
+    }
+
+    .button:hover {
+        color: rgb(162, 162, 162);
+        transition: all ease-in-out 0.25s;
+    }
+}
+
+/* desktop small screen */
+@media screen and (max-width: 1600px) and (orientation: landscape) {
+
+    /* form */
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-title {
+        font-size: 3vw;
+        font-weight: 200;
+        margin: 0 0 2vw 0;
+    }
+
+    .input {
+        width: 35vw;
+        height: auto;
+        font-size: 1.25vw;
+        border: none;
+        background-color: none;
+        border-bottom: 0.2vw solid black;
+        margin: 0 0 2vw 0;
+    }
+
+    .error {
+        font-size: 1.25vw;
+        margin: 0 0 1vw 0;
+        color: red;
+    }
+
+    .button {
+        width: 10vw;
+        height: 2.5vw;
+        font-size: 1.2vw;
+        border: none;
+        background-color: black;
+        color: white;
+        transition: all ease-in-out 0.25s;
+    }
+
+    .button:hover {
+        color: rgb(162, 162, 162);
+        transition: all ease-in-out 0.25s;
+    }
+}
+
+/* phone screen */
+@media screen and (max-width: 480px) and (orientation: portrait) {
+
+    /* form */
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-title {
+        font-size: 8vw;
+        font-weight: 200;
+        margin: 0 0 5vw 0;
+    }
+
+    .input {
+        width: 75vw;
+        height: auto;
+        font-size: 4vw;
+        margin: 0 0 8vw 0;
+        border: none;
+        background-color: none;
+        border-bottom: 0.2vw solid black;
+    }
+
+    .error {
+        font-size: 3vw;
+        margin: 0 0 4vw 0;
+        color: red;
+    }
+
+    .button {
+        width: 30vw;
+        height: 8vw;
+        font-size: 3vw;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+}
+
+/* tablet screen */
+@media screen and (min-width: 480px) and (orientation: portrait) {
+
+    /* form */
+    .form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .login-title {
+        font-size: 6vw;
+        font-weight: 200;
+        margin: 0 0 5vw 0;
+    }
+
+    .input {
+        width: 60vw;
+        height: auto;
+        font-size: 3vw;
+        border-bottom: 0.2vw solid black;
+        margin: 0 0 4vw 0;
+        border: none;
+        background-color: none;
+        border-bottom: 0.2vw solid black;
+    }
+
+    .error {
+        font-size: 2.5vw;
+        margin: 0 0 0.25vw 0;
+        color: red;
+    }
+
+    .button {
+        width: 25vw;
+        height: 6vw;
+        font-size: 2.5vw;
+        margin: 3vw 0 0 0;
+        border: none;
+        background-color: black;
+        color: white;
+    }
+}
