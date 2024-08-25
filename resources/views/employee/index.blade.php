@@ -41,8 +41,7 @@
                         <tr>
                             <td class="table-body">{{ $loop->iteration }}</td>
                             <td class="table-body photo-column">
-                                <img src="{{ asset('photo/' . $employee->photo) }}" alt="photo of employee"
-                                    class="photo">
+                                <img src="{{ asset('photo/' . $employee->photo) }}" alt="photo of employee" class="photo">
                             </td>
                             <td class="table-body">{{ $employee->first_name }}</td>
                             <td class="table-body">{{ $employee->last_name }}</td>
@@ -52,8 +51,8 @@
                             <td class="table-body">{{ $employee->phone }}</td>
                             <td class="table-body">{{ $employee->address }}</td>
                             <td class="table-body">{{ $employee->date_hired }}</td>
-                            <td class="table-body">{{ $employee->position->position_name }}</td>
-                            <td class="table-body">{{ $employee->department->department_name }}</td>
+                            <td class="table-body">{{ $employee->position ? $employee->position->position_name : 'No Position' }}                            </td>
+                            <td class="table-body">{{ $employee->department ? $employee->department->department_name : 'No Department'  }}</td>
                             <td class="table-body">{{ $employee->status }}</td>
                             <td class="table-body action-column">
                                 <a href="{{ route('employee.edit', $employee) }}" class="action-button">Edit</a>

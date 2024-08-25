@@ -41,8 +41,7 @@
                         <tr>
                             <td class="table-body"><?php echo e($loop->iteration); ?></td>
                             <td class="table-body photo-column">
-                                <img src="<?php echo e(asset('photo/' . $employee->photo)); ?>" alt="photo of employee"
-                                    class="photo">
+                                <img src="<?php echo e(asset('photo/' . $employee->photo)); ?>" alt="photo of employee" class="photo">
                             </td>
                             <td class="table-body"><?php echo e($employee->first_name); ?></td>
                             <td class="table-body"><?php echo e($employee->last_name); ?></td>
@@ -52,8 +51,8 @@
                             <td class="table-body"><?php echo e($employee->phone); ?></td>
                             <td class="table-body"><?php echo e($employee->address); ?></td>
                             <td class="table-body"><?php echo e($employee->date_hired); ?></td>
-                            <td class="table-body"><?php echo e($employee->position->position_name); ?></td>
-                            <td class="table-body"><?php echo e($employee->department->department_name); ?></td>
+                            <td class="table-body"><?php echo e($employee->position ? $employee->position->position_name : 'No Position'); ?>                            </td>
+                            <td class="table-body"><?php echo e($employee->department ? $employee->department->department_name : 'No Department'); ?></td>
                             <td class="table-body"><?php echo e($employee->status); ?></td>
                             <td class="table-body action-column">
                                 <a href="<?php echo e(route('employee.edit', $employee)); ?>" class="action-button">Edit</a>
