@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('salaries', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('employee_id')->constrained('employees');
+            $table->foreignId('employee_id')->nullable()->constrained('employees')->onDelete('set null');
             $table->integer('amount');
             $table->integer('bonus');
             $table->integer('deductions');
